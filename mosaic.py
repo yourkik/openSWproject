@@ -20,3 +20,7 @@ faces = cascade.detectMultiScale(gray, 1.05, 3, minSize = (150,150))
 for (x,y,w,h) in faces:
     img = mosaic_area(img,x,y,w,h)
     
+cv2.imshow("mosaic", img)
+
+cv2.waitKey()
+cv2.destroyAllWindows()
